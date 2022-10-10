@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    background-color: black;
+    background-repeat: no-repeat;
+    height: 800px;
+}
+
+header{
+    display: flex;
+    max-width: 1740px;
+}
+
+header .container-fluid1{
+    margin-left: 0px;
+}
+
+header .cabtxt{
+    color:rgb(7, 85, 210);
+    font-style: italic;
+    width: 700px;
+    padding: 20px;
+     
+}  
+
+header .text-center{
+    font-size: 50px;
+}
+
+header .text-end{
+    font-size:xx-large;
+}
+ 
