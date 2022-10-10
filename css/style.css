@@ -4,6 +4,15 @@
     box-sizing: border-box;
 }
 
+@font-face {
+    font-family: "Rubik-Bold";
+    src: url(/fonts/Rubik-Bold.ttf);
+}
+
+@font-face {
+    font-family: "Rubik-Italic-Variable";
+    src: url(/fonts/Rubik-Italic-VariableFont_wght.ttf);
+}
 
 body{
     background-color: black;
@@ -16,23 +25,38 @@ header{
     max-width: 1740px;
 }
 
-header .container-fluid1{
+header .container-fluid .first{
     margin-left: 0px;
 }
 
 header .cabtxt{
     color:rgb(7, 85, 210);
-    font-style: italic;
     width: 700px;
     padding: 20px;
      
 }  
 
 header .text-center{
-    font-size: 50px;
+    font-family: "Rubik-Bold";
+    font-size: 70px;
+    color: rgb(75, 230, 28);
 }
 
 header .text-end{
-    font-size:xx-large;
+    font-family: "Rubik-Italic-Variable";
+    font-size: medium;
+    color: rgb(75, 230, 28);
 }
- 
+
+
+.menu{
+    display: flex;    
+    justify-content: space-around;
+    background-color:rgb(0, 0, 0);
+    border: 2px solid rgb(75, 230, 28);
+}
+
+.menu .item{
+    color:rgb(75, 230, 28);
+    text-transform: uppercase;
+}
