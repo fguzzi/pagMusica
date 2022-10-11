@@ -18,12 +18,13 @@ body{
     background-color: black;
     background-repeat: no-repeat;
     height: 800px;
+    
 }
 
 header{
     display: flex;
     max-width: 1740px;
-}
+} 
 
 header .container-fluid .first{
     margin-left: 0px;
@@ -48,15 +49,59 @@ header .text-end{
     color: rgb(75, 230, 28);
 }
 
-
 .menu{
     display: flex;    
     justify-content: space-around;
     background-color:rgb(0, 0, 0);
-    border: 2px solid rgb(75, 230, 28);
+     
 }
 
 .menu .item{
     color:rgb(75, 230, 28);
     text-transform: uppercase;
 }
+
+section{
+    width: 1740px;
+    font-family: "Rubik-Bold";
+    color:rgb(140, 218, 117);
+    text-align: center;
+    margin-top: 40px;
+}
+
+section marquee.beat{
+    color:rgb(140, 218, 117);
+    font-size: 60px;
+}
+
+footer{
+    display: flex;
+    width: 1740px;
+}
+
+footer .container-fluid.third{
+    color:rgb(140, 218, 117);
+    text-align: center;
+}
+
+@media screen and (max-width: 991px){
+    
+    .cabtxt{
+        display: none;
+    }
+
+    .menu{
+        margin-left: 180px;
+    }
+
+    section{
+        max-width: 900px;
+    }
+}
+
+@media screen and (max-width: 899px){
+
+    
+
+}
+
