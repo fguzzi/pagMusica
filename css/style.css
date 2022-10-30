@@ -1,9 +1,11 @@
+/* RESET CSS */
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* FONTES */
 @font-face {
     font-family: "Rubik-Bold";
     src: url(/fonts/Rubik-Bold.ttf);
@@ -14,64 +16,66 @@
     src: url(/fonts/Rubik-Italic-VariableFont_wght.ttf);
 }
 
+
+/* DESKTOP (ACIMA DE 992 PX) */
 body{
     background-color: black;
     background-repeat: no-repeat;
     height: 800px;
-    
 }
 
 header{
     display: flex;
     max-width: 1740px;
+    justify-content: space-between;
 } 
 
-header .container-fluid .first{
-    margin-left: 0px;
+header .img{
+    margin-bottom: 0px;
+    height: 300px;
 }
 
-header .cabtxt{
-    color:rgb(7, 85, 210);
-    width: 700px;
-    padding: 20px;
-     
-}  
-
-header .text-center{
-    font-family: "Rubik-Bold";
-    font-size: 70px;
-    color: rgb(75, 230, 28);
+h1{
+    margin-top: 0px;
 }
 
-header .text-end{
-    font-family: "Rubik-Italic-Variable";
-    font-size: medium;
-    color: rgb(75, 230, 28);
+
+header .hamb{
+    display: none;
+    height: 300px;
 }
 
-.menu{
-    display: flex;    
-    justify-content: space-around;
+header .menu{
+    display: flex;
+    flex-direction: column;   
+    justify-content: center;
     background-color:rgb(0, 0, 0);
-     
+    height: 300px;
+    margin-top: 10px;
 }
 
 .menu .item{
     color:rgb(75, 230, 28);
     text-transform: uppercase;
+    text-decoration: none;
+    padding: 20px;
 }
 
-section{
+main{
     width: 1740px;
     font-family: "Rubik-Bold";
     color:rgb(140, 218, 117);
     text-align: center;
-    margin-top: 40px;
+    
 }
 
-section marquee.beat{
+main .saudacao{
+    margin-top: 5px;
+}
+
+main .beat{
     color:rgb(140, 218, 117);
-    font-size: 60px;
+    font-size: 30px;
 }
 
 footer{
@@ -79,27 +83,34 @@ footer{
     width: 1740px;
 }
 
-footer .container-fluid.third{
+footer .container-fluid{
     color:rgb(140, 218, 117);
     text-align: center;
 }
 
+
+/* TABLET DE 991 A 768 PX*/
 @media screen and (max-width: 991px){
     
-    .cabtxt{
-        display: none;
-    }
+        
+    .container-fluid{
+        align-content: center;
 
-    .menu{
-        margin-left: 180px;
     }
 
     section{
         max-width: 900px;
+        align-content: left;
+    }
+
+    section .saudacao{
+        display: flex;
+        justify-content: center;
     }
 }
 
 @media screen and (max-width: 899px){
+
 
     
 

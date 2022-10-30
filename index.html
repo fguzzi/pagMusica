@@ -6,60 +6,58 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Música</title>
-    <link rel="stylesheet" href="/bootstrap-5.2.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="./bootstrap-5.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
-
+  
     <header>
 
-        <div class="container-fluid first">
-            <img src="/images/guita.jpg" alt="guitarra">
+        <div class="img">
+            <img src="./images/guita.jpg" alt="guitarra">
         </div>
 
-        <div class="cabtxt">
-            <p class="text-start"></p> <br>
-            <p class="text-center">Música</p> <br>
-            <p class="text-end"></p>
+        <div class="hamb">
+            <img onclick="mostrarMenu()" class="menu-hamb" src="./images/hamb.png" alt="">
         </div>
-        
-    </header>
-
-    <div class="container-fluid second">
 
         <nav class="menu">  
-            <a class="item" href="/index.html">Home</a>
-            <a class="item" href="/guivi.html">Guitarra / Violão</a> 
-            <a class="item" href="/beatles.html">Beatles</a>
-            <a class="item" href="/fotos.html">Fotos / Vídeos</a>
-            <a class="item" href="/teoria.html">Teoria Musical</a>
+                <a class="item" href="./index.html">> Home</a>
+                <a class="item" href="./guivi.html">> Guitarra</a> 
+                <a class="item" href="./beatles.html">> Beatles</a>
+                <a class="item" href="./fotos.html">> Mídia</a>
+                <a class="item" href="./teoria.html">> Teoria Musical</a>
         </nav>
+                     
 
-    </div>
+    </header>
 
-    <section>
+    <main>
 
-        <h1>Bem Vindo !!!</h1>
-        <br>
+        <div class="saudacao">
+        <h1>Seja Bem Vindo !!!</h1>
+        </div>
+        
         <marquee class="beat">Página para Beatlemaníacos</marquee>
 
-        <img src="/images/guitafundo2.jpg" alt="">
+        <img src="./images/guitafundo2.jpg" alt="">
         
-    </section>
+    </main>
 
     <footer>
 
-        <div class="container-fluid third">
+        <div class="container-fluid">
             
             <br>
+            
             <p>Fábio Aurélio Guzzi - Beatlemaníaco</p><br>
              
         </div>
  
     </footer>
 
-    <script src="/bootstrap-5.2.0/js/bootstrap.bundle.min.js"></script>
-    <script src="/js/script.js"></script>
+    <script src="./bootstrap-5.2.0/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/script.js"></script>
 </body>
 </html>
