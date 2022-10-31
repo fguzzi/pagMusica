@@ -35,11 +35,6 @@ header .img{
     height: 300px;
 }
 
-h1{
-    margin-top: 0px;
-}
-
-
 header .hamb{
     display: none;
     height: 300px;
@@ -66,7 +61,6 @@ main{
     font-family: "Rubik-Bold";
     color:rgb(140, 218, 117);
     text-align: center;
-    
 }
 
 main .saudacao{
@@ -84,30 +78,49 @@ footer{
 }
 
 footer .container-fluid{
-    color:rgb(140, 218, 117);
+    color:#8cda75;
     text-align: center;
 }
 
-
-/* TABLET DE 991 A 768 PX*/
-@media screen and (max-width: 991px){
-    
-        
-    .container-fluid{
-        align-content: center;
-
-    }
-
-    section{
-        max-width: 900px;
-        align-content: left;
-    }
-
-    section .saudacao{
-        display: flex;
-        justify-content: center;
-    }
+.menu .mostraMenu{
+    left: 0 !important;
+    opacity: 0.98 !important;
 }
+
+/* TABLET DE 991 A 768 PX */
+@media screen and (max-width: 991px){
+
+header .menu{
+    position: fixed;/* FIXA O ELEMENTO BASEADO NO  VIEWPORT */
+    top: 0;
+    left: -80%;/* INICIALMENTE ESCONDIDO */
+    z-index: 100; /* CONTROLA A CAMADA DO ELEMENTO COM POSITION */
+    opacity: 60;/*INICIALMENTE INVISIVEL*/
+    width: 13%;
+    height: 70vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    background-color: #227f05;
+    border-radius: 0 0 0 50px;
+    transition: left 0.5s, opacity 0.6s;
+    margin-top: 0px;
+}
+
+.menu .item{
+    color: black;
+}
+
+
+/* MENU HAMBURGER */
+header .hamb {
+    display: block;
+    width: 45px;
+}
+
+}
+
+/* MOBILE ABAIXO DE 768 PX */
 
 @media screen and (max-width: 899px){
 
