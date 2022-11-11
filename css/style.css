@@ -82,7 +82,7 @@ footer .container-fluid{
     text-align: center;
 }
 
-.menu .mostraMenu{
+.mostraMenu{
     left: 0 !important;
     opacity: 0.98 !important;
 }
@@ -107,17 +107,32 @@ header .menu{
     margin-top: 0px;
 }
 
+/* MENU HAMBURGER */
+header .hamb {
+    display: block;
+    width: 80px;
+    height: 80px;
+}
+
 .menu .item{
     color: black;
 }
 
-
-/* MENU HAMBURGER */
-header .hamb {
-    display: block;
-    width: 45px;
+main{
+    max-width: 991px;
 }
 
+main .h1{
+    max-width: 991px;
+}
+
+main .saudacao{
+    max-width: 991px;
+}
+
+footer{
+    max-width: 991px;
+}
 }
 
 /* MOBILE ABAIXO DE 768 PX */
